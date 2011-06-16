@@ -997,6 +997,13 @@ ul.login_box_fields
 	background-position: 0 -27px;
 }
 
+.list_content a.icon span
+{
+  float: left;
+  display: inline;
+  text-indent: -9999px;
+}
+
 thead
 {
 	height: 50px;

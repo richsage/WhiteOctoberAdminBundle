@@ -91,7 +91,7 @@
                                     {% set routeParameters = action.routeParameters is defined ? action.routeParameters : { 'id': '@id' } %}
                                     {% set url = _admin.generateDataAction(data, action.routeName, routeParameters) %}
                                     {% if action._method is not defined or 'GET' == action._method %}
-                                        <a href="{{ url }}" class="icon {{ action.label|lower }}" title="{{ action.label }}"></a>
+                                        <a href="{{ url }}" class="icon {{ action.label|lower }}" title="{{ action.label }}"><span>{{ action.label }}</span></a>
                                     {% else %}
                                         <form action="{{ url }}" method="POST">
                                             <input type="hidden" name="_method" value="{{ action._method }}" />
